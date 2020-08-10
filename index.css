@@ -1,0 +1,132 @@
+*
+{
+    font-family: cursive;
+
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: #35495e;
+}
+
+#nav
+{
+    width: 100%;
+    height: 80px;
+    position:fixed;
+    top: 0;
+
+    text-align: center;
+
+    background-color: #63b7af;
+}
+
+#head
+{
+    font-size: 28px;
+
+    padding-top: 20px;
+
+    color: white;
+}
+
+#con
+{
+    margin: 120px;
+
+    text-align: center;
+}
+
+.dab
+{
+    display: inline-block;
+
+    width: 200px;
+    height: 60px;
+    margin: 50px;
+
+
+
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0 2px 6px 0 #121212;
+}
+
+.dab1
+{
+    display: inline-block;
+    float: left;
+
+    width: 60px;
+    height: 60px;
+
+    transition: width 0.8s , border-radius .5s;
+
+    border-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #63b7af;
+}
+
+.flag
+{
+    max-width: 85%;
+    max-height: 85%;
+    margin: 10px;
+    padding: 0;
+}
+
+.dab1:hover
+{
+    width: 200px;
+    cursor: pointer;
+
+    border-radius: 6px;
+    background-color: #ee8572;
+}
+
+.dab:hover .dab1
+{
+    width: 200px;
+cursor: pointer;
+    border-radius: 6px;
+    background-color: #ee8572;
+}
+
+.txt
+{
+    font-size: 22px;
+
+    float: left;
+
+    padding: 15px;
+
+    color: #292929;
+}
+
+.dab:hover{
+  cursor: pointer;
+}
+
+
+.dab1:hover .flag,
+.dab1:hover ~ .txt,
+.dab:hover .flag,
+.dab:hover .txt
+{
+    display: none;
+
+}
+
+
+.date{
+
+
+color:white;
+display: none;
+text-align: left;
+padding: 12px;
+font-size: 27px;
+}
